@@ -4,7 +4,7 @@
   "description": "一个晚餐图生成器",
   "icons": [
     {
-      "src": "/alphascape.github.io/web/cid.jpg",
+      "src": "/web/cid.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
@@ -14,8 +14,8 @@
       "sizes": "512x512"
     }
   ],
-  "scope": "/alphascape.github.io/",
-  "start_url": "/alphascape.github.io/",
+  "scope": "/",
+  "start_url": "/",
   "background_color": "#2d2c2c",
   "theme_color": "#2d2c2c",
   "display": "standalone"

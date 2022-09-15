@@ -1,8 +1,8 @@
-const cacheName = "app-" + "18ecccfdeb4fca2f2fb7f82be7ff9a591d7faab1";
-const resourcesToCache = ["/alphascape.github.io","/alphascape.github.io/app.css","/alphascape.github.io/app.js","/alphascape.github.io/manifest.webmanifest","/alphascape.github.io/wasm_exec.js","/alphascape.github.io/web/app.wasm","/alphascape.github.io/web/cid.jpg"];
+const cacheName = "app-" + "e1c871e05af5cf18e93a6cbb27149d62379a3555";
+const resourcesToCache = ["/","/app.css","/app.js","/manifest.webmanifest","/wasm_exec.js","/web/app.wasm","/web/cid.jpg"];
 
 self.addEventListener("install", (event) => {
-  console.log("installing app worker 18ecccfdeb4fca2f2fb7f82be7ff9a591d7faab1");
+  console.log("installing app worker e1c871e05af5cf18e93a6cbb27149d62379a3555");
 
   event.waitUntil(
     caches
@@ -28,7 +28,7 @@ self.addEventListener("activate", (event) => {
       );
     })
   );
-  console.log("app worker 18ecccfdeb4fca2f2fb7f82be7ff9a591d7faab1 is activated");
+  console.log("app worker e1c871e05af5cf18e93a6cbb27149d62379a3555 is activated");
 });
 
 self.addEventListener("fetch", (event) => {

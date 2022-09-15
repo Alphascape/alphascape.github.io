@@ -5,7 +5,7 @@ var goappNav = function () {};
 var goappOnUpdate = function () {};
 var goappOnAppInstallChange = function () {};
 
-const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"/alphascape.github.io","GOAPP_STATIC_RESOURCES_URL":"/alphascape.github.io","GOAPP_VERSION":"18ecccfdeb4fca2f2fb7f82be7ff9a591d7faab1"};
+const goappEnv = {"GOAPP_INTERNAL_URLS":"null","GOAPP_ROOT_PREFIX":"","GOAPP_STATIC_RESOURCES_URL":"","GOAPP_VERSION":"e1c871e05af5cf18e93a6cbb27149d62379a3555"};
 const goappLoadingLabel = "{progress}%";
 const goappWasmContentLengthHeader = "";
 
@@ -24,7 +24,7 @@ async function goappInitServiceWorker() {
   if ("serviceWorker" in navigator) {
     try {
       const registration = await navigator.serviceWorker.register(
-        "/alphascape.github.io/app-worker.js"
+        "/app-worker.js"
       );
 
       goappServiceWorkerRegistration = registration;
@@ -214,7 +214,7 @@ async function goappInitWebAssembly() {
 
     const go = new Go();
     const wasm = await instantiateStreaming(
-      fetchWithProgress("/alphascape.github.io/web/app.wasm", showProgress),
+      fetchWithProgress("/web/app.wasm", showProgress),
       go.importObject
     );
 
